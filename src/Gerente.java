@@ -1,5 +1,6 @@
 
 public class Gerente extends Funcionario{
+	
 	private String clave;
 	
 	public void setClave(String clave) {
@@ -7,6 +8,10 @@ public class Gerente extends Funcionario{
 	}
 	
 	public boolean iniciarSesion(String clave) {
-		return clave == "MiclavePersonal";
+		return clave == "clave123";
+	}
+	
+	public double getBonificacion() {
+		return super.getSalario();
 	}
 }

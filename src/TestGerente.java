@@ -5,10 +5,10 @@ public class TestGerente {
 		//gerente.setSalario(10000);
 		//Funcionario gerente = new Funcionario();
 		gerente.setSalario(15000);
-		gerente.setClave("MiclavePersonal");
+		gerente.setClave("clave123");
 		gerente.setTipo(1);
 		
 		System.out.println("La bonificacion del gerente es: "+gerente.getBonificacion());
-		System.out.println(gerente.iniciarSesion("MiclavePersonal"));
+		System.out.println(gerente.iniciarSesion("clave123"));
 	}
 }
