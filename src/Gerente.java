@@ -1,4 +1,3 @@
-
 public class Gerente extends Funcionario{
 	
 	private String clave;
@@ -12,6 +11,7 @@ public class Gerente extends Funcionario{
 	}
 	
 	public double getBonificacion() {
+		System.out.println("Ejecutando desde Gerente");
 		return super.getSalario() + 
 				super.getBonificacion(); 	
 	}
