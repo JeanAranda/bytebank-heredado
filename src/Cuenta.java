@@ -32,7 +32,7 @@ public class Cuenta {
 
     public boolean transfiere(double valor, Cuenta destino) {
         if(this.saldo >= valor) {
-            this.saldo -= valor;
+            this.saca(valor);
             destino.deposita(valor);
             return true;
         } else {
