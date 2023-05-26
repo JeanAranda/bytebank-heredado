@@ -2,7 +2,7 @@
 public class SistemaInterno {
 	private String clave = "clave123";
 	
-	public boolean autentica(FuncionarioAutenticable gerente) {
+	public boolean autentica(Autenticable gerente) {
 		boolean puedeIniciarSesion = gerente.iniciarSesion(clave);
 		if (puedeIniciarSesion) {
 			System.out.println("Acceso admitido");
