@@ -1,17 +1,7 @@
-public class Gerente extends Funcionario{
-	
-	private String clave;
-	
-	public void setClave(String clave) {
-		this.clave = clave;
-	}
-	
-	public boolean iniciarSesion(String clave) {
-		return clave == "clave123";
-	}
+public class Gerente extends FuncionarioAutenticable{
 	
 	public double getBonificacion() {
 		System.out.println("Ejecutando desde Gerente");
-		return super.getSalario() + this.getSalario() * 0.05;	
+		return 2000;
 	}
 }
